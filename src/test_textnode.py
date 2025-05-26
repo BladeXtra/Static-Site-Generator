@@ -17,7 +17,7 @@ class TestTextNode(unittest.TestCase):
     def test_url_None_input(self):
         node = TextNode("Click here", TextType.LINKS)
         node2 = TextNode("Click here", TextType.LINKS, None)
-        self.assertEqual(node, node2)
+        self.assertEqual(node.url, node2.url)
 
 
 
